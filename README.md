@@ -35,30 +35,3 @@
   affects how far the RayCastor will check for objects. The resolution affects how many rays the Camera projects,
   and therefor how smooth the rendering looks.
 
-## Devlog
-
-- May 29, 2017: 
-  created repo in class, decided on final project topic (approved) - ray castor  
-  wrote basic ray class with instance variables, constructor, toString (started using Pvector- Processing class)
-
-- June 1st, 2017:
-  Wrote camera class which interacts with Ray to create the projection of images. 
-  Methods to create an "interative" ray and created mathods to "rotate" the camera.
-  The camera also has a customizable resolution now.
-  
-- June 4th, 2017:
-  The terrain is now stored inside of a World class. The World stores Solids by their coordinates, with
-  a very fast cordinate lookup system. This also induced a refactoring of the Raycasting and Texture classes.
-  Textures no longer draw themselves to the screen, but rather return an image buffer for Renderer to use.
-
-- June 7th, 2017:
-  Got Image Textures to work. Got HD textures to work too.
-
-- June 9th, 2017:
-  The background has a sky and ground, replacing the black void. Added some rudimentary movement.
-  
-- June 10th, 2017:
-  Added doors and beacons.
-
-- June 11th, 2017:
-  Fixed all the bugs inolved with movement. Also added the ability to load a World from a file.
